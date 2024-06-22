@@ -1,0 +1,43 @@
+
+## Explanation
+
+The input is a string that may contain words and numbers. 
+The goal is to divide the sentence into tokens, where each token represents a word or number. 
+The tokens are created by separating each word or number with a space. 
+
+After creating the tokens in a string array, each token is checked to determine if it contains a number. 
+If a number is found, it is compared with a pre-declared variable that is initially set to -1. 
+If the number is valid according to the given conditions (in this case, it should not contain the digit 9),
+ and if the number is greater than the value stored in the variable, then the number is stored in the variable.
+
+
+
+
+```java
+String inputString = "The input is a string that may contain words and numbers.";
+String[] tokens = inputString.split(" ");
+```
+
+After executing this code, the `tokens` array will contain the tokens, where each token represents a word or number from the input string.
+
+You can then iterate over the `tokens` array and perform further operations on each token, such as checking if it contains a number or comparing it with a variable.
+
+or maybe use text format 
+
+
+The input is a string that may contain words and numbers. 
+The goal is to divide the sentence into tokens, where each token represents a word or number. 
+The tokens are created by splitting the input string using the regular expression `\\s+`, which matches one or more whitespace characters. 
+After splitting, the tokens are stored in a string array. 
+You can then iterate over the `tokens` array and perform further operations on each token, such as checking if it contains a number or comparing it with a variable.
+
+```java
+String inputString = "The input is a string that may contain words and numbers.";
+String[] tokens = inputString.split("\\s+");
+```
+
+After executing this code, the `tokens` array will contain the tokens, where each token represents a word or number from the input string.
+
+
+
+
